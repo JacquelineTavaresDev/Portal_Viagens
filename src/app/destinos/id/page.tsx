@@ -3,7 +3,9 @@ import { destinos } from "../../lib/destinos";
 import styles from "./page.module.css";
 
 type Props = {
-  params: Promise<{ id: string }>;
+  params: Promise<{
+    id: string;
+  }>;
 };
 
 export default async function DestinoDetalhe({ params }: Props) {
